@@ -8,7 +8,7 @@ public class Conexion {
         try {
            
            Class.forName("oracle.jdbc.driver.OracleDriver");
-           con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "videoclub","videoclub");
+           con = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.25:1521:XE", "videoclub","videoclub");
         }catch (Exception e) {
             System.out.println("Error SQL : "+e.getMessage());
         }
